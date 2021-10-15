@@ -1,5 +1,11 @@
+
 import React, {useState, useEffect} from 'react';
 // import "../styles/App.css";
+
+import React from "react";
+import Dashboard from "./dashboard/Dashboard";
+
+
 
 const App = () =>{
 
@@ -14,6 +20,7 @@ const App = () =>{
     }, []);
 
     return(
+
         <div>
             <div>
                 {(data && data.civilizations) ? 
@@ -25,6 +32,8 @@ const App = () =>{
             </div>
 
         </div>
+
+        <Dashboard></Dashboard>
     );
 }
 
