@@ -1,0 +1,10 @@
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+.dashboard{
+    display:grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-gap: 10px;
+}

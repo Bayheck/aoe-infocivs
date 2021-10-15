@@ -1,10 +1,7 @@
 
 import React, {useState, useEffect} from 'react';
-// import "../styles/App.css";
-
-import React from "react";
-import Dashboard from "./dashboard/Dashboard";
-
+import Card from "./dashboard/Card";
+import "../styles/dashboard.css"
 
 
 const App = () =>{
@@ -20,20 +17,17 @@ const App = () =>{
     }, []);
 
     return(
-
-        <div>
-            <div>
+        <div className = "main">
+            <div  className = "dashboard">
                 {(data && data.civilizations) ? 
                     data.civilizations.map((civ) =>(
                         <div>
-                            {civ.name}
+                            <Card civ = {civ} ></Card>
                         </div>
                 )) : " "}
             </div>
 
         </div>
-
-        <Dashboard></Dashboard>
     );
 }
 
