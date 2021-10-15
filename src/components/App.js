@@ -1,6 +1,10 @@
+import React from "react";
+import Dashboard from "./dashboard/Dashboard";
+
+
 const App = () =>{
     return(
-        <div>Hello World</div>
+        <Dashboard></Dashboard>
     );
 }
 
